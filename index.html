@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="assets/css/styles.css?v=3" type="text/css">
+    <script src="assets/js/libs/jquery.min.js"></script>
+    <script src="assets/js/libs/jquery-ui.min.js"></script>
+    <script src="assets/js/libs/jquery.ui.touch-punch.min.js"></script>
+    <script src="assets/js/libs/jquery.ui.touch-punch.min.js"></script>
+    <script src="assets/js/mock-images.js?v=3"></script>
+    <script src="assets/js/helpers.js?v=4"></script>
+    <script src="assets/js/scripts.js?v=5"></script>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title>Above Digital The Face Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+
+<body>
+
+<div class="menu_outer_parent">
+    <div class="menu_parent">
+
+        <div class="menu_container center_align">
+            <button class="button button2 start-game">Start The Game</button>
+            <button class="button button3 show-leaderboard">Leaderboard</button>
+            <button class="button button1 about-btn">About</button>
+        </div>
+
+        <div class="player_detail" style="display: none">
+            <form class="userDataForm">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="player_first_name" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="player_last_name" placeholder="Your last name..">
+
+                <!--<input type="submit" class="button" value="Submit">-->
+                <button class="button button2" style="margin: 0 auto">Submit</button>
+            </form>
+        </div>
+
+
+        <div class="menu_container leaderboard hide auto-margin">
+            <table class="leaderboard_table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="3">
+                            <div class="spinner"></div>
+                        </td>
+
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr style="background: none">
+                        <!--<td></td>-->
+                        <td colspan="3">
+                            <button class="button button3 back-to-menu auto-margin">< Back</button>
+                        </td>
+                        <!--<td></td>-->
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <div class="summary-result hide auto-margin">
+            <h2 style="text-align: center">
+                Your score:
+            <span class="score">0</span>
+            </h2>
+
+            <button class="button button3 show-leaderboard">Leaderboard</button>
+            <button class="button button1 start-game">Replay</button>
+        </div>
+
+        <div class="about-me hide auto-margin" id="about-me" >
+            <div class="img">
+            </div>
+            <div style="margin-top: 50px; text-align: center">
+                This game is developed by S.Mahdi in cooperation with Above Digital.
+            </div>
+
+            <button style="margin: 50px auto" class="button button3 back-to-menu">< Back</button>
+        </div>
+
+    </div>
+</div>
+
+<div class="game-env" style="display: none">
+    <div class="error"></div>
+    <div class="success"></div>
+
+    <div class="country-box red top left japanese">Japanese</div>
+    <div class="country-box green top right chinese">Chinese</div>
+    <div class="country-box blue bottom left korean">Korean</div>
+    <div class="country-box yellow bottom right thai">Thai</div>
+
+    <div class="draggable" id="draggable">
+    </div>
+
+
+    <div class="score-container">
+        <h3>
+            Score:
+            <span class="score">0</span>
+        </h3>
+    </div>
+
+</div>
+
+
+</body>
+</html>
